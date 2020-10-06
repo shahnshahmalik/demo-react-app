@@ -28,6 +28,29 @@ body{
 .space{
     justify-content: space-between;
 }
+.fd-column{
+  flex-direction: column;
+}
 .v-cent{
   align-items: center;
+}
+.back, .home{
+  background-color: #fff;
+  padding: 4px 10px;
+  border-radius: 3px;
+  border: 1px solid rgb(189, 188, 188);
+  color: rgb(158, 158, 158);
+  cursor: pointer;
+}
+.back:hover, .home:hover{
+    border: 1px solid rgb(141, 141, 141);
+  color: rgb(80, 79, 79);
+}
+
+.player {
+  min-height: 100px;
+  width: 100%;
+-webkit-box-shadow: 0px 0px 16px -11px rgba(77,75,77,1);
+-moz-box-shadow: 0px 0px 16px -11px rgba(77,75,77,1);
+box-shadow: 0px 0px 16px -11px rgba(77,75,77,1);
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Landing from './Layouts/landing';
+import Player from './Components/player/player';
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,7 +22,7 @@ export default function App() {
             <Landing />
           </Route>
           <Route path="/">
-            <Landing />
+            <Player />
           </Route>
         </Switch>
     </Router>
