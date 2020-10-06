@@ -22,7 +22,9 @@ export default function App() {
             <Landing />
           </Route>
           <Route path="/">
+            <div className={'fixed-bottom'}>
             <Player />
+             </div>
           </Route>
         </Switch>
     </Router>

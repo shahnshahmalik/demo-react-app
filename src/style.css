@@ -5,6 +5,38 @@ body{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: rgb(82, 82, 82);
 }
+/* color pallete */
+.primary{
+    color: rgb(34, 201, 243);
+}
+.default{
+    color: rgb(110, 110, 110);
+}
+.secondary{
+    color: rgb(248, 245, 51);
+}
+.accent{
+    color: rgb(249, 62, 149);
+}
+.warn{
+    color: rgb(243, 76, 34);
+}
+.primary-bg{
+    background-color: rgb(34, 201, 243);
+}
+.default-bg{
+    background-color: rgb(110, 110, 110);
+}
+.secondary-bg{
+    background-color: rgb(248, 245, 51);
+}
+.accent-bg{
+    background-color: rgb(249, 62, 149);
+}
+.warn-bg{
+    background-color: rgb(243, 76, 34);
+}
+/* color pallete */
 .header {
   min-height: 56px;
   padding: 4px 10px;
@@ -48,9 +80,12 @@ body{
 }
 
 .player {
-  min-height: 100px;
+  min-height: 70px;
   width: 100%;
--webkit-box-shadow: 0px 0px 16px -11px rgba(77,75,77,1);
+}
+
+.card-shadow{
+  -webkit-box-shadow: 0px 0px 16px -11px rgba(77,75,77,1);
 -moz-box-shadow: 0px 0px 16px -11px rgba(77,75,77,1);
 box-shadow: 0px 0px 16px -11px rgba(77,75,77,1);
 }
@@ -59,9 +94,29 @@ box-shadow: 0px 0px 16px -11px rgba(77,75,77,1);
   padding: 8px 25px;
   border-radius: 3px;
   border: 1x solid rgb(214, 214, 214);
-  color: rgb(34, 201, 243);
 }
 
 .disabled{
   color: #d6d8da!important;
+}
+.fixed-bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%
+}
+
+.seekBar-container{
+  padding: 0px;
+  width: 100%;
+}
+
+.seekBar-outer{
+  background: transparent;
+  padding: 0 10px;
+}
+.seekBar-track{
+  border: none!important;
+  height: 1.5px;
+  width: 100%;
+  /* background-color: #ebebeb; */
 }
