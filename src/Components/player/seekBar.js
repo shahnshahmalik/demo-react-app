@@ -3,18 +3,16 @@ import "../../style.css";
 
 export default function SeekBar(props) {
   const [seekStateValue, setSeekStateValue] = useState(props.seekValue);
-  const showSeekhandle = () => {
-    return seekStateValue > 0;
-  };
-
+  const enableSeeking = props.isLoaded === true;
   const changeValue = (value) => {
     setSeekStateValue(value);
-    
-  }
+  };
 
+  console.log(enableSeeking)
   return (
     <div className={"seekBar-outer"}>
       <input
+        disabled={!enableSeeking}
         className={"seekBar-track"}
         type={"range"}
         name="seek"

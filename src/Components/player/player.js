@@ -12,7 +12,7 @@ export default function Player(props) {
   return (
     <div className={"fl v-cent h-cent space fd-column"}>
       <div className={"seekBar-container"}>
-        <SeekBar seekValue={45}/>
+        <SeekBar seekValue={45} isLoaded={false}/>
       </div>
       <div className={"fl v-cent h-cent space player"}>
         <div className={"player-action-btn default"}>
