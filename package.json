@@ -4,8 +4,9 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "4.11.0",
-    "@material-ui/icons": "^4.9.1",
+    "@material-ui/icons": "4.9.1",
     "@types/react": "16.9.51",
+    "jquery": "^3.5.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-router-dom": "5.2.0"

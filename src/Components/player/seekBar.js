@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../style.css";
 
 export default function SeekBar(props) {
@@ -8,7 +8,10 @@ export default function SeekBar(props) {
     setSeekStateValue(value);
   };
 
-  console.log(enableSeeking)
+  useEffect(() => {
+    changeValue(props.seekValue);
+  });
+
   return (
     <div className={"seekBar-outer"}>
       <input
